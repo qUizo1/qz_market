@@ -20,14 +20,6 @@ A modern market script for vRP2 that allows players to purchase food and drinks 
 2. Add `start qz_market` to your `server.cfg` file
 3. Start your server
 
-## Configuration
-
-The market items are configured through vRP2's edibles system. All items are already defined in:
-- `cfg/items.lua` - Item definitions
-- `cfg/edibles.lua` - Consumable item effects
-
-To modify prices or add new items, edit the `categories` array in `html/script.js`.
-
 ## Usage
 
 ### For Players
@@ -44,6 +36,7 @@ To modify prices or add new items, edit the `categories` array in `html/script.j
 qz_market/
 ├── client.lua           # Client-side event handling
 ├── server.lua           # Server-side purchase processing
+├── server_vrp.lua
 ├── fxmanifest.lua       # Resource manifest
 ├── html/
 │   ├── index.html       # NUI interface
@@ -56,11 +49,7 @@ qz_market/
 
 ### Dependencies
 - vRP2 framework
-
-
-### NUI Callbacks
-- `purchase` - Handle cart checkout
-- `close` - Close market interface
+  
 
 ## Customization
 
